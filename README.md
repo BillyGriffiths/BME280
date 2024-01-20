@@ -38,7 +38,7 @@ The default I2C address is `0x77`. To make use of I2C address `0x76` create a so
 
 ## Power consumption
 
-At 2.62uC (Microcoulomb), the module is most power efficient in its default configuration, making use of the BME280's forced mode and powered using 3.3V. To make address selection more convenient an additional 10K resistor acts as a pullup for the address-select feature. This, unfortunately, comes at a cost when it is configured to make use of I2C address `0x76`. (See "How to optimize for battery operation" below to reduce consumption).
+At 2.62uC (Microcoulomb), the module is most power efficient in its default configuration, making use of the BME280's forced mode and powered using 3.3V. To make address selection more convenient an additional 10K resistor acts as a pull-up for the address-select feature. This, unfortunately, comes at a cost when it is configured to make use of I2C address `0x76`. (See "How to optimize for battery operation" below to reduce consumption).
 
 **Sleep mode:** When the BME280 is in power save mode\
 **Normal mode:** When the BME280 remains in an active state\
@@ -70,7 +70,7 @@ The best way to save power is to only power the module when a reading is require
 
 - *When using I2C address 0x77:* No power saving is achieved by modifying the module.
 
-- *When using I2C address 0x76:* Using a soldering iron, carefully remove resistor R1. This eliminates the pull-down current draw of resistor R1 and will reduce consumption by ~324uA (3.3V) and ~333uA (5.0V) respectively.
+- *When using I2C address 0x76:* Using a soldering iron, carefully remove resistor R1. This eliminates the pull-up current draw of resistor R1 and will reduce consumption by ~324uA (3.3V) and ~333uA (5.0V) respectively.
 
 <img width="388" alt="image" src="https://github.com/BillyGriffiths/BME280/assets/6160978/e2da045e-5136-4779-b4e7-3a46e5137b0d">
 
