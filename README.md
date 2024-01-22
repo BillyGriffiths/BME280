@@ -22,7 +22,7 @@ Simply power the board, hook up the two data lines (I2C), install your favorite 
 - Logic level shifting: Automatic
 - Sensor: Bosch Sensortec BME280
 - Function: Temperature, pressure, and humidity sensor
-- Dimensions: 20 x 17mm
+- Dimensions: 12 x 18mm
 - Breadboard compatible: Yes
 
 ## Interfacing with your microcontroller
